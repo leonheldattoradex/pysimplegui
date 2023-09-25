@@ -23,6 +23,8 @@ services:
     device_cgroup_rules:
       # ... for tty0
       - 'c 4:0 rmw'
+      # ... for tty1
+      - 'c 4:1 rmw'
       # ... for tty7
       - 'c 4:7 rmw'
       # ... for /dev/input devices
